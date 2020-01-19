@@ -5,7 +5,7 @@
             [ring.util.response :refer [response]]
             [scramvloyage.resources :refer [scramble]]))
 
-(defn home-routes [endpoint]
+(defn app-routes [endpoint]
   (routes
    (GET "/" _
      (-> "public/index.html"

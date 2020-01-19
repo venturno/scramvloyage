@@ -100,8 +100,6 @@
 
              :server-logfile "log/figwheel.log"}
 
-  :doo {:build "test"}
-
   :profiles {:dev
              {:dependencies [[figwheel "0.5.18"]
                              [figwheel-sidecar "0.5.18"]

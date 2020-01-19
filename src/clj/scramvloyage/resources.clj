@@ -13,10 +13,8 @@
   {:allowed-methods [:get]
    :available-media-types ["application/json"]
    :malformed? (fn [ctx]
-                 (clojure.pprint/pprint ctx)
                  (not (valid-request?
                        (get-in ctx [:request :params]))))
    :handle-ok (fn [ctx]
                 (let [{:keys [letters word]} (get-in ctx [:request :params])]
-                  (prn (scramble? letters word))
                   (str (scramble? letters word))))})

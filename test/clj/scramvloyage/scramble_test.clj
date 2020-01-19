@@ -1,4 +1,4 @@
-(ns scramvloyage.core-test
+(ns scramvloyage.scramble-test
   (:require [clojure.test :refer :all]
             [scramvloyage.scramble :refer [scramble?] :as scramble]
             [clojure.spec.alpha :as s]))
@@ -14,7 +14,7 @@
 
 (deftest scramble-function
   (testing "spec validation"
-    (are [value expected] (= (s/valid? ::scramble/scramble-def value) expected)
+    (are [value expected] (= (s/valid? ::scramble/spec value) expected)
       "rekqodlw"  true
       "world"     true
       "steak"     true

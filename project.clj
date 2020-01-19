@@ -11,6 +11,7 @@
                  [ring/ring-defaults "0.3.2"]
                  [bk/ring-gzip "0.3.0"]
                  [radicalzephyr/ring.middleware.logger "0.6.0"]
+                 [ring-cors "0.1.13"]
                  [clj-logging-config "1.9.12"]
                  [environ "1.1.0"]
                  [com.stuartsierra/component "0.3.2"]
@@ -18,7 +19,9 @@
                  [org.clojure/tools.namespace "0.2.11"]
                  [compojure "1.6.1"]
                  [liberator "0.15.1"]
-                 [reagent "0.8.1"]]
+                 [reagent "0.8.1"]
+                 [re-com "2.6.0"]
+                 [cljs-ajax "0.8.0"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]
             [lein-environ "1.1.0"]]
